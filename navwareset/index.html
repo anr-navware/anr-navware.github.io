@@ -94,12 +94,12 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://github.com/anr-navware" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
+                          <i class="fas fa-chalkboard-teacher"></i>
                         </span>
-                        <span>Paper</span>
+                        <span>Tutorials</span>
                       </a>
                     </span>
 
@@ -110,18 +110,18 @@
                       <span class="icon">
                         <i class="fas fa-download"></i>
                       </span>
-                      <span>Download</span>
+                      <span>Downloads</span>
                     </a>
                   </span>
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/anr-navware" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Repo</span>
                   </a>
                 </span>
 
@@ -132,7 +132,7 @@
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>Paper</span>
                 </a>
               </span>
             </div>
@@ -172,7 +172,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            NavWareSet is a novel dataset designed to advance socially aware robot navigation. It offers multi-modal recordings of socially compliant and non-compliant robot trajectories in realistic indoor scenarios. Using two different robots (Toyota HSR and Clearpath Jackal) across seven diverse setups, NavWareSet captures rich human-robot interactions and navigation challenges. With lidar, RGB-D, video, odometry, and annotated human positions, it provides a valuable source for analyzing and training navigation algorithms that prioritize human comfort and safety.
+            NavWareSet is a novel dataset designed to advance socially aware robot navigation. It offers multi-modal recordings of socially compliant and non-compliant robot trajectories in realistic indoor scenarios. Using two different robots across seven diverse setups, NavWareSet captures rich human-robot interactions and navigation challenges. With lidar, RGB-D, video, odometry, and annotated human positions, it provides a valuable source for analyzing and training navigation algorithms that prioritize human comfort and safety.
           </p>
         </div>
       </div>
@@ -192,9 +192,8 @@
           <li>Wide range of social navigation scenarios with both individual and group interactions.</li>
           <li>Over 192 minutes of interaction data and over 172 minutes of annotated trajectories.</li>
           <li>Over XXX individualy annotated tracks.</li>
-          <li>Sensory data from the perspective 2 different robots.</li>
-          <li>3D LiDAR scans from a stationary sensor.</li>
-          <li>Video recording from a static camera.</li>
+          <li>Sensory data from the perspective 2 different robots (Toyota HSR and Clearpath Jackal).</li>
+          <li>Stationary groundtruth recording station (grs) with video camera and 3D LiDAR scans.</li>
           <li>Occupancy grid of the obstacles in the environment.</li>
           <li>Recording of both social and non-social behavior of the robots.</li>
         </ul>
@@ -212,17 +211,77 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <div class="content has-text-justified">
-              <!-- INSERT DOUBLE COLUMN BELOW -->
-            <div style="display: flex; gap: 16px;">
-              <p style="flex: 1;">
-                The NavWareSet dataset is a comprehensive collection of data designed to advance the field of social navigation in robotics. It includes a wide range of scenarios involving both individual and group interactions, providing over 192 minutes of interaction data and more than 172 minutes of annotated trajectories. The dataset features sensory data from two different robots, 3D LiDAR scans from a stationary sensor, and video recordings from a static camera. Additionally, it includes occupancy grid maps of the environment and recordings of both socially compliant and non-compliant robot behaviors. This dataset aims to facilitate the development and evaluation of algorithms for socially aware navigation in complex environments.
+              <!-- Setup section -->
+              <p style="font-size: 1.5em; text-align: center;">
+                <strong>Environment</strong>
               </p>
+            <div style="display: flex; gap: 16px;">
+              <div style="flex: 1;">
+                <!-- add image below-->
+                <img src="static/images/map.png" alt="Experimental Setup" style="width: 100%; height: auto; border-radius: 8px;">
+              </div>
               <p style="flex: 1;">
-                The NavWareSet dataset is a valuable resource for researchers and developers working on social navigation in robotics. It provides a rich set of data that can be used to train and evaluate algorithms for socially
-                compliant navigation, enabling robots to navigate in environments with varying levels of human presence and interaction. The dataset's diverse scenarios and multi-modal recordings offer a comprehensive view of the challenges and opportunities in social navigation, making it an essential tool for advancing the state of the art in this field.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
             </div>
-            <!-- END DOUBLE COLUMN -->
+            <!-- end of Setup section -->
+            <!-- Setup section -->
+              <p style="font-size: 1.5em; text-align: center;">
+                <br><strong>Hand annotated positions</strong>
+              </p>
+            <div style="display: flex; gap: 16px;">
+              <div style="flex: 1;">
+                <!-- add image below-->
+                <img src="static/images/CVAT.jpg" alt="Experimental Setup" style="width: 100%; height: auto; border-radius: 8px;">
+              </div>
+              <p style="flex: 1;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <!-- end of Setup section -->
+            <!-- Setup section -->
+              <p style="font-size: 1.5em; text-align: center;">
+                <br><strong>Groundtruth recording station (grs)</strong>
+              </p>
+            <div style="display: flex; gap: 16px;">
+              <div style="flex: 1;">
+                <!-- add image below-->
+                <img src="static/images/grs.jpg" alt="Experimental Setup" style="width: 100%; height: auto; border-radius: 8px;">
+              </div>
+              <p style="flex: 1;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <!-- end of Setup section -->
+                        <!-- Setup section -->
+              <p style="font-size: 1.5em; text-align: center;">
+                <br><strong>Robots</strong>
+              </p>
+            <div style="display: flex; gap: 16px;">
+              <div style="flex: 1;">
+                <!-- add image below-->
+                <img src="static/images/robots.jpg" alt="Experimental Setup" style="width: 100%; height: auto; border-radius: 8px;">
+              </div>
+              <p style="flex: 1;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <!-- end of Setup section -->
+                        <!-- end of Setup section -->
+                        <!-- Setup section -->
+              <p style="font-size: 1.5em; text-align: center;">
+                <br><strong>Experiment description</strong>
+              </p>
+            <div style="display: flex; gap: 16px;">
+              <div style="flex: 1;">
+                <!-- add image below-->
+                <img src="static/images/experimental.png" alt="Experimental Setup" style="width: 100%; height: auto; border-radius: 8px;">
+              </div>
+              <p style="flex: 1;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <!-- end of Setup section -->
           </div>
         </div>
       </div>
