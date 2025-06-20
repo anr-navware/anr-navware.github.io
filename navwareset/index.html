@@ -55,7 +55,7 @@
             <h1 class="title is-1 publication-title">NavWareSet: A Dataset of Socially Compliant and Non-Compliant Robot Navigation</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-               
+               <!--
               <span class="author-block">
                 
                 <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Johnata Brayan</a><sup>1</sup>,</span>
@@ -75,9 +75,11 @@
                   </span>
                   <span class="author-block">
                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Zhi Yan</a><sup>2,5</sup></span>
+                  -->
                   </div>
 
                   <div class="is-size-5 publication-authors">
+                    <!--
                     <span class="author-block">
                       <sup>1</sup>Universidade Federal de Minas Gerais<br>
                       <sup>2</sup>Université de technologie de Belfort Montbéliard<br>
@@ -85,7 +87,7 @@
                       <sup>4</sup>Inria<br>
                       <sup>5</sup>ENSTA - Institut Polytechnique de Paris<br>
                     </span>
-                  
+                  -->
                   </div>
 
                   <div class="column has-text-centered">
@@ -148,11 +150,14 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/hero_video.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Top-left: Lidar point cloud of the robot's environment;<br>
+        Top-right: Robot's own sensory data;<br>
+        Bottom-left: Synced point cloud with pedestrian's positions and robot's pose;<br>
+        Bottom-right: Extracted pedestrian and robot trajectories with environment map.
       </h2>
     </div>
   </div>
@@ -167,7 +172,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            NavWareSet is a novel dataset designed to advance socially aware robot navigation. It offers multi-modal recordings of socially compliant and non-compliant robot trajectories in realistic indoor scenarios. Using two different robots (Toyota HSR and Clearpath Jackal) across seven diverse setups, NavWareSet captures rich human-robot interactions and navigation challenges. With lidar, RGB-D, video, odometry, and annotated human positions, it provides a valuable source for analyzing and training navigation algorithms that prioritize human comfort and safety.
           </p>
         </div>
       </div>
@@ -176,6 +181,28 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Dataset overview -->
+<section class="hero is-small">
+   <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Overview</h2>
+      <!-- unordered html list below -->
+      <div class="content">
+        <ul>
+          <li>Wide range of social navigation scenarios with both individual and group interactions.</li>
+          <li>Over 192 minutes of interaction data and over 172 minutes of annotated trajectories.</li>
+          <li>Over XXX individualy annotated tracks.</li>
+          <li>Sensory data from the perspective 2 different robots.</li>
+          <li>3D LiDAR scans from a stationary sensor.</li>
+          <li>Video recording from a static camera.</li>
+          <li>Occupancy grid of the obstacles in the environment.</li>
+          <li>Recording of both social and non-social behavior of the robots.</li>
+        </ul>
+
+    </div>
+  </div>
+</section>
+<!-- End dataset overview -->
 
 <!-- Image carousel -->
 <section class="hero is-small">
