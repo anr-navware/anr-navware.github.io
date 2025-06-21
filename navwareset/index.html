@@ -294,6 +294,7 @@
                 <iframe width="100%" height="100%" style="flex: 1; min-height: 300px;" title="angel.stl" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="clipboard-write; autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://thangs.com/model/1362968/embed?utm_source=embed"></iframe>
               </div>
             </div>
+              <br>
               <p class="has-text-justified" style="text-align: center;">
                 The Ground Truth Recording Station (GRS) is equipped with an 
                 <a href="https://www.intelrealsense.com/depth-camera-d455/" target="_blank" style="color: #1a0dab;">Intel® RealSense™ Depth Camera D455</a> 
@@ -327,21 +328,180 @@
                   In most scenarios both robots were teleoperated by a human operator, first in a socially aware manner, and then in a non-aware manner.
                 </p>
             </div>
-            <!-- end of Setup section -->
-                        <!-- end of Setup section -->
-                        <!-- Setup section -->
+            <!-- Setup section -->
               <p style="font-size: 1.5em; text-align: center;">
                 <br><strong>Experiment description</strong>
               </p>
-            <div style="display: flex; gap: 16px; align-items: center;">
-              <div style="flex: 1;">
+            <div style="display: flex; gap: 16px; align-items: stretch;">
+              <div style="flex: 1; display: flex; flex-direction: column;">
                 <!-- add image below-->
-                <img src="static/images/experimental.png" alt="Experimental Setup" style="width: 100%; height: auto; border-radius: 8px;">
+                <img src="static/images/Experiment_description.png" alt="Experimental Setup" style="width: 100%; height: 100%; border-radius: 8px; object-fit: cover; flex: 1;">
               </div>
-              <p style="flex: 1;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
             </div>
+              <br>
+              <p class="has-text-justified" style="text-align: center;">
+                The experiment was designed to capture common social navigation scenarios. These scenarios were proposed by Francis et al. in their paper, <a href="https://arxiv.org/pdf/2306.16740" target="_blank" style="color: #1a0dab;">Principles and Guidelines for Evaluating Social Robot Navigation Algorithms</a>. They serve not only to facilitate data collection but also to provide a standardized basis for evaluating the performance of social navigation algorithms. A detailed description of the scenarios used in NavWareSet is provided in the table below.
+              </p>
+              <details class="expandable">
+                <summary> Show Scenarios Table</summary>
+                <div class="content">
+                  <table border="1" cellpadding="5" cellspacing="0">
+                    <thead>
+                      <tr>
+                        <th>Scenario Name</th>
+                        <th>Scenario Description</th>
+                        <th>Geom. Layout</th>
+                        <th>Scientific Purpose</th>
+                        <th>Robot Task</th>
+                        <th>Human Behavior</th>
+                        <th>Ideal Outcome</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>FRONTAL APPROACH</td>
+                        <td>A pedestrian and robot approach head-on.</td>
+                        <td>Passable Space</td>
+                        <td>Pedestrian Interaction</td>
+                        <td>Navigate A to B</td>
+                        <td>Navigate B to A</td>
+                        <td>Robot / humans pass</td>
+                      </tr>
+                      <tr>
+                        <td>PEDESTRIAN OBSTRUCTION</td>
+                        <td>A pedestrian blocks the robot's path.</td>
+                        <td>Passable Space</td>
+                        <td>Pedestrian Interaction</td>
+                        <td>Navigate A to B</td>
+                        <td>Block path</td>
+                        <td>Robot stops or reroutes</td>
+                      </tr>
+                      <tr>
+                        <td>BLIND CORNER</td>
+                        <td>A robot and human meet at a blind corner.</td>
+                        <td>Corner</td>
+                        <td>Pedestrian Interaction</td>
+                        <td>Navigate A to B</td>
+                        <td>Navigate B to A</td>
+                        <td>No collision / obstruction</td>
+                      </tr>
+                      <tr>
+                        <td>PERPENDICULAR CROSSING</td>
+                        <td>Person moves perpendicular to robot.</td>
+                        <td>Intersection</td>
+                        <td>Pedestrian Interaction</td>
+                        <td>Navigate A to B</td>
+                        <td>Navigate B to A</td>
+                        <td>No collision / obstruction</td>
+                      </tr>
+                      <tr>
+                        <td>FOLLOWING HUMAN</td>
+                        <td>A robot follows a person.</td>
+                        <td>Walking Space</td>
+                        <td>Joint Navigation</td>
+                        <td>Follow human</td>
+                        <td>Lead robot</td>
+                        <td>Robot follows person</td>
+                      </tr>
+                      <tr>
+                        <td>CIRCULAR CROSSING</td>
+                        <td>People and robot move in paths that intersect in the center of a circle</td>
+                        <td>Passable Space</td>
+                        <td>Crowd Navigation</td>
+                        <td>Navigate A to B</td>
+                        <td>Navigate B to A</td>
+                        <td>No collision / smooth flow</td>
+                      </tr>
+
+                      <tr>
+                        <td>OBJECT HANDOVER</td>
+                        <td>A robot hands an object to a human.</td>
+                        <td>Passable Space</td>
+                        <td>Interactive Navigation</td>
+                        <td>Deliver/Receive object</td>
+                        <td>Deliver/Receive object</td>
+                        <td>Human/Robot takes object</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+              <br>
+              <p class="has-text-justified" style="text-align: center;">
+                In total 17 participants were asigned numbers and divided in 2 groups of 5 and 5 pairs.
+                Each group performed all scenarios but the object handover scenario. All scenarios were recorded for 4 minutes.
+                Most scenarios were performed with both robots, except for the object handover scenario which was only performed with the Toyota HSR.
+                Most scenarios were recorded twice, once with the robot navigating in a socially compliant manner and once in a non-compliant manner.
+                A detailed description of all recorded scenes used in NavWareSet is provided in the table below.
+              </p>
+              <details class="expandable">
+                <summary> Show Scenes Table</summary>
+                <div class="content">
+                  <table border="1">
+                    <thead>
+                      <tr>
+                        <th>N°</th>
+                        <th>Name</th>
+                        <th>Scenario</th>
+                        <th>Robot</th>
+                        <th>Robot Behavior</th>
+                        <th>Group</th>
+                        <th>Participants</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>1</td><td>Scene 1</td><td>Frontal Approach</td><td>HSR</td><td>Social</td><td>Group 1</td><td>1, 2, 3, 4, 5</td></tr>
+                      <tr><td>2</td><td>Scene 2</td><td>Pedestrian Obstruction</td><td>HSR</td><td>Social</td><td>Group 1</td><td>1, 2, 3, 4, 5</td></tr>
+                      <tr><td>3</td><td>Scene 3</td><td>Blind Corner</td><td>HSR</td><td>Social</td><td>Group 1</td><td>1, 2, 3, 4, 5</td></tr>
+                      <tr><td>4</td><td>Scene 4</td><td>Following Human</td><td>HSR</td><td>Social</td><td>Group 1</td><td>1, 2, 3, 4, 5</td></tr>
+                      <tr><td>5</td><td>Scene 5</td><td>Perpendicular Crossing</td><td>HSR</td><td>Social</td><td>Group 1</td><td>1, 2, 3, 4, 5</td></tr>
+                      <tr><td>6</td><td>Scene 6</td><td>Circular Crossing</td><td>HSR</td><td>Social</td><td>Group 1</td><td>1, 2, 3, 4, 5</td></tr>
+                      <tr><td>7</td><td>Scene 8</td><td>Frontal Approach</td><td>HSR</td><td>Non-social</td><td>Group 1</td><td>1, 2, 3, 4, 5</td></tr>
+                      <tr><td>8</td><td>Scene 9</td><td>Pedestrian Obstruction</td><td>HSR</td><td>Non-social</td><td>Group 1</td><td>1, 2, 3, 4, 5</td></tr>
+                      <tr><td>9</td><td>Scene 10</td><td>Blind Corner</td><td>HSR</td><td>Non-social</td><td>Group 1</td><td>1, 2, 3, 4, 5</td></tr>
+                      <tr><td>10</td><td>Scene 12</td><td>Perpendicular Crossing</td><td>HSR</td><td>Non-social</td><td>Group 1</td><td>1, 2, 3, 4, 5</td></tr>
+                      <tr><td>11</td><td>Scene 13</td><td>Circular Crossing</td><td>HSR</td><td>Non-social</td><td>Group 1</td><td>1, 2, 3, 4, 5</td></tr>
+                      <tr><td>12</td><td>Scene 15</td><td>Frontal Approach</td><td>Jackal</td><td>Social</td><td>Group 1</td><td>1, 2, 3, 5, 6</td></tr>
+                      <tr><td>13</td><td>Scene 16</td><td>Pedestrian Obstruction</td><td>Jackal</td><td>Social</td><td>Group 1</td><td>1, 2, 3, 5, 6</td></tr>
+                      <tr><td>14</td><td>Scene 17</td><td>Blind Corner</td><td>Jackal</td><td>Social</td><td>Group 1</td><td>1, 2, 3, 5, 6</td></tr>
+                      <tr><td>15</td><td>Scene 18</td><td>Following Human</td><td>Jackal</td><td>Social</td><td>Group 1</td><td>1, 2, 3, 5, 6</td></tr>
+                      <tr><td>16</td><td>Scene 19</td><td>Perpendicular Crossing</td><td>Jackal</td><td>Social</td><td>Group 1</td><td>1, 2, 3, 5, 6</td></tr>
+                      <tr><td>17</td><td>Scene 20</td><td>Circular Crossing</td><td>Jackal</td><td>Social</td><td>Group 1</td><td>1, 2, 3, 5, 6</td></tr>
+                      <tr><td>18</td><td>Scene 21</td><td>Frontal Approach</td><td>Jackal</td><td>Non-social</td><td>Group 1</td><td>1, 2, 3, 5, 6</td></tr>
+                      <tr><td>19</td><td>Scene 22</td><td>Pedestrian Obstruction</td><td>Jackal</td><td>Non-social</td><td>Group 1</td><td>1, 2, 3, 5, 6</td></tr>
+                      <tr><td>20</td><td>Scene 23</td><td>Blind Corner</td><td>Jackal</td><td>Non-social</td><td>Group 1</td><td>1, 2, 3, 5, 6</td></tr>
+                      <tr><td>21</td><td>Scene 25</td><td>Perpendicular Crossing</td><td>Jackal</td><td>Non-social</td><td>Group 1</td><td>1, 2, 3, 5, 6</td></tr>
+                      <tr><td>22</td><td>Scene 26</td><td>Circular Crossing</td><td>Jackal</td><td>Non-social</td><td>Group 1</td><td>1, 2, 3, 5, 6</td></tr>
+                      <tr><td>23</td><td>Scene 27</td><td>Frontal Approach</td><td>HSR</td><td>Social</td><td>Group 2</td><td>7, 8, 9, 10, 11</td></tr>
+                      <tr><td>24</td><td>Scene 28</td><td>Pedestrian Obstruction</td><td>HSR</td><td>Social</td><td>Group 2</td><td>7, 8, 9, 10, 11</td></tr>
+                      <tr><td>25</td><td>Scene 29</td><td>Blind Corner</td><td>HSR</td><td>Social</td><td>Group 2</td><td>7, 8, 9, 10, 11</td></tr>
+                      <tr><td>26</td><td>Scene 30</td><td>Following Human</td><td>HSR</td><td>Social</td><td>Group 2</td><td>7, 8, 9, 10, 11</td></tr>
+                      <tr><td>27</td><td>Scene 31</td><td>Perpendicular Crossing</td><td>HSR</td><td>Social</td><td>Group 2</td><td>7, 8, 9, 10, 11</td></tr>
+                      <tr><td>28</td><td>Scene 32</td><td>Circular Crossing</td><td>HSR</td><td>Social</td><td>Group 2</td><td>7, 8, 9, 10, 11</td></tr>
+                      <tr><td>29</td><td>Scene 34</td><td>Frontal Approach</td><td>HSR</td><td>Non-social</td><td>Group 2</td><td>7, 8, 9, 10, 11</td></tr>
+                      <tr><td>30</td><td>Scene 35</td><td>Pedestrian Obstruction</td><td>HSR</td><td>Non-social</td><td>Group 2</td><td>7, 8, 9, 10, 11</td></tr>
+                      <tr><td>31</td><td>Scene 36</td><td>Blind Corner</td><td>HSR</td><td>Non-social</td><td>Group 2</td><td>7, 8, 9, 10, 11</td></tr>
+                      <tr><td>32</td><td>Scene 38</td><td>Perpendicular Crossing</td><td>HSR</td><td>Non-social</td><td>Group 2</td><td>7, 8, 9, 10, 11</td></tr>
+                      <tr><td>33</td><td>Scene 39</td><td>Circular Crossing</td><td>HSR</td><td>Non-social</td><td>Group 2</td><td>7, 8, 9, 10, 11</td></tr>
+                      <tr><td>34</td><td>Scene 41</td><td>Frontal Approach</td><td>Jackal</td><td>Social</td><td>Group 2</td><td>7, 8, 9, 10, 11</td></tr>
+                      <tr><td>35</td><td>Scene 42</td><td>Pedestrian Obstruction</td><td>Jackal</td><td>Social</td><td>Group 2</td><td>7, 8, 9, 10, 11</td></tr>
+                      <tr><td>36</td><td>Scene 43</td><td>Blind Corner</td><td>Jackal</td><td>Social</td><td>Group 2</td><td>7, 8, 9, 10, 11</td></tr>
+                      <tr><td>37</td><td>Scene 44</td><td>Following Human</td><td>Jackal</td><td>Social</td><td>Group 2</td><td>7, 8, 9, 10, 11</td></tr>
+                      <tr><td>38</td><td>Scene 45</td><td>Perpendicular Crossing</td><td>Jackal</td><td>Social</td><td>Group 2</td><td>7, 8, 9, 10, 11</td></tr>
+                      <tr><td>39</td><td>Scene 46</td><td>Circular Crossing</td><td>Jackal</td><td>Social</td><td>Group 2</td><td>7, 8, 9, 10, 12</td></tr>
+                      <tr><td>40</td><td>Scene 47</td><td>Frontal Approach</td><td>Jackal</td><td>Non-social</td><td>Group 2</td><td>7, 8, 9, 10, 11</td></tr>
+                      <tr><td>41</td><td>Scene 49</td><td>Blind Corner</td><td>Jackal</td><td>Non-social</td><td>Group 2</td><td>7, 8, 9, 10, 11</td></tr>
+                      <tr><td>42</td><td>Scene 51</td><td>Perpendicular Crossing</td><td>Jackal</td><td>Non-social</td><td>Group 2</td><td>7, 8, 9, 10, 11</td></tr>
+                      <tr><td>43</td><td>Scene 52</td><td>Circular Crossing</td><td>Jackal</td><td>Non-social</td><td>Group 2</td><td>7, 8, 9, 10, 12</td></tr>
+                      <tr><td>44</td><td>Scene 53</td><td>Object handover</td><td>HSR</td><td>Social</td><td>Pair 1</td><td>2, 8</td></tr>
+                      <tr><td>45</td><td>Scene 54</td><td>Object handover</td><td>HSR</td><td>Social</td><td>Pair 2</td><td>1, 9</td></tr>
+                      <tr><td>46</td><td>Scene 55</td><td>Object handover</td><td>HSR</td><td>Social</td><td>Pair 3</td><td>13, 14</td></tr>
+                      <tr><td>47</td><td>Scene 56</td><td>Object handover</td><td>HSR</td><td>Social</td><td>Pair 4</td><td>4, 15</td></tr>
+                      <tr><td>48</td><td>Scene 57</td><td>Object handover</td><td>HSR</td><td>Social</td><td>Pair 5</td><td>16, 17</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
             <!-- end of Setup section -->
           </div>
         </div>
@@ -355,25 +515,22 @@
 <section class="hero is-small">
    <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Data processing</h2>
+      <h2 class="title is-3">Data Pipeline</h2>
       <!-- unordered html list below -->
-      <div class="content has-text-justified">
-              <!-- Data section -->
-              <p style="font-size: 1.5em; text-align: center;">
-                <strong>Environment</strong>
-              </p>
-            <div style="display: flex; gap: 16px;">
-              <div style="flex: 1;">
-                <!-- add image below-->
-                <img src="static/images/map.png" alt="Experimental Setup" style="width: 100%; height: auto; border-radius: 8px;">
-              </div>
-              <p style="flex: 1;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-            <!-- end of Data section -->
-
-    </div>
+      <div style="display: flex; gap: 16px; align-items: center;">
+        <div style="flex: 1;">
+          <!-- add image below-->
+          <img src="static/images/robots.jpg" alt="Experimental Setup" style="width: 100%; height: auto; border-radius: 8px;">
+        </div>
+          <p style="flex: 1;">
+            The robots used in the NavWareSet dataset are the
+            <a href="https://clearpathrobotics.com/jackal-small-unmanned-ground-vehicle/" target="_blank" style="color: #1a0dab;">Clearpath Jackal</a> and the
+            <a href="https://www.toyota-europe.com/news/2018/toyota-expanding-robotics-research-in-europe" target="_blank" style="color: #1a0dab;">Toyota HSR</a>.
+            The Jackal is a small, rugged robot designed for outdoor and indoor environments, equipped with a 3D LiDAR sensor and an RGB-D camera.
+            The HSR is a versatile human-support robot capable of performing household tasks, featuring a manipulator arm, a mobile base, and various sensors for safe and intelligent interaction with people and objects.
+            In most scenarios both robots were teleoperated by a human operator, first in a socially aware manner, and then in a non-aware manner.
+          </p>
+      </div>
   </div>
 </section>
 <!-- End Data processing -->
