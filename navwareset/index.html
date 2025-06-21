@@ -38,6 +38,9 @@
   <link rel="stylesheet" href="static/css/index.css">
 
   <style>
+    a:hover {
+      text-decoration: underline;
+    }
     /* Style the <details> container */
     details.expandable {
       border: 1px solid #dbdbdb;  /* Bulma light gray */
@@ -282,17 +285,31 @@
               <p style="font-size: 1.5em; text-align: center;">
                 <br><strong>Groundtruth recording station (grs)</strong>
               </p>
-            <div style="display: flex; gap: 16px;">
-              <div style="flex: 1;">
+            <div style="display: flex; gap: 16px; align-items: stretch;">
+              <div style="flex: 1; display: flex; flex-direction: column;">
                 <!-- add image below-->
-                <img src="static/images/grs.jpg" alt="Experimental Setup" style="width: 100%; height: auto; border-radius: 8px;">
+                <img src="static/images/grs.jpg" alt="Experimental Setup" style="width: 100%; height: 100%; border-radius: 8px; object-fit: cover; flex: 1;">
               </div>
-              <p style="flex: 1;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
+              <div style="flex: 2; display: flex; flex-direction: column;">
+                <iframe width="100%" height="100%" style="flex: 1; min-height: 300px;" title="angel.stl" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="clipboard-write; autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://thangs.com/model/1362968/embed?utm_source=embed"></iframe>
+              </div>
             </div>
+              <p class="has-text-justified" style="text-align: center;">
+                The Ground Truth Recording Station (GRS) is equipped with an 
+                <a href="https://www.intelrealsense.com/depth-camera-d455/" target="_blank" style="color: #1a0dab;">Intel® RealSense™ Depth Camera D455</a> 
+                and a 
+                <a href="https://cdn.robosense.cn/20200723161715_42428.pdf" target="_blank" style="color: #1a0dab;">Robosense RS-LiDAR-16 3D LiDAR</a>. 
+                Both sensors are mounted on a custom 3D-printed frame, which is positioned on a tripod for stable data collection. 
+                You can interact with the structure in the 3D viewport above (click and drag to rotate) or access the 3D model 
+                <a href="https://thangs.com/designer/johnatabrayan/3d-model/grs.stl-1362968" target="_blank" style="color: #1a0dab;">here</a>.
+              </p>
+              <p class="has-text-justified" style="text-align: center;">
+                To minimize occlusions, the GRS was positioned at a height of 2.17&nbsp;m above the ground. 
+                To enhance the resolution of the LiDAR data, the GRS was tilted 15° downward toward the area of interest.
+              </p>
             <!-- end of Setup section -->
-                        <!-- Setup section -->
+
+            <!-- Setup section -->
               <p style="font-size: 1.5em; text-align: center;">
                 <br><strong>Robots</strong>
               </p>
