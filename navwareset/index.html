@@ -2,89 +2,103 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="Documentation for the  NavWareSet dataset">
   <meta property="og:title" content="NavWareSet"/>
   <meta property="og:description" content="Documentation for the  NavWareSet dataset"/>
   <meta property="og:url" content="https://anr-navware.github.io/navwareset/"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <!-- <meta property="og:image" content="static/image/your_banner_image.png" /> -->
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
-
-
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
   <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="Social navigation human-robot interaction dataset socially compliant navigation non-compliant navigation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
   <title>NavWareSet</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <style>
     a:hover {
       text-decoration: underline;
     }
-    /* Style the <details> container */
     details.expandable {
-      border: 1px solid #dbdbdb;  /* Bulma light gray */
+      border: 1px solid #dbdbdb;
       border-radius: 4px;
       padding: 0.75em 1em;
       margin-top: 1em;
-      background: #fafafa; /* Bulma's lightest background */
+      background: #fafafa;
       transition: box-shadow 0.3s;
     }
-
-    /* Add subtle shadow on hover/open */
     details.expandable[open] {
       box-shadow: 0 2px 6px rgba(10,10,10,0.1);
     }
-
-    /* Style the summary toggle */
     details.expandable summary {
       cursor: pointer;
       font-weight: 600;
       outline: none;
       list-style: none;
     }
-
-    /* Optional: add a custom disclosure icon */
     details.expandable summary::marker {
       display: none;
     }
-
     details.expandable summary::before {
       content: "▶ ";
       display: inline-block;
       transform: rotate(0deg);
       transition: transform 0.2s ease;
     }
-
-    /* Rotate the icon when open */
     details.expandable[open] summary::before {
       transform: rotate(90deg);
     }
-
-    /* Content inside */
     details.expandable .content {
       margin-top: 0.75em;
       padding-left: 1.5em;
+    }
+    /* Responsive video */
+    .responsive-video {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+    .responsive-video video,
+    .responsive-video iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
+    /* Responsive image */
+    .responsive-img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    @media (max-width: 768px) {
+      .is-size-5, .is-size-4, .is-size-3, .is-size-2, .is-size-1 {
+        font-size: 1.1em !important;
+      }
+      .hero-body, .section {
+        padding: 1.5rem 0.5rem;
+      }
+      .columns {
+        flex-direction: column;
+      }
+      .column {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
     }
   </style>
 
@@ -94,7 +108,6 @@
   <script src="static/js/index.js"></script>
 </head>
 <body>
-
 
   <section class="hero">
     <div class="hero-body">
@@ -196,12 +209,12 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/hero_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
+      <div class="responsive-video">
+        <video poster="" id="tree" autoplay controls muted loop>
+          <source src="static/videos/hero_video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <h2 class="subtitle has-text-centered" style="margin-top:1em;">
         <strong>Top-left</strong>: Lidar point cloud of the robot's environment;<br>
         <strong>Top-right</strong>: Robot's own sensory data;<br>
         <strong>Bottom-left</strong>: Synced point cloud with pedestrian's positions and robot's pose;<br>
@@ -234,13 +247,12 @@
    <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Overview</h2>
-      <!-- unordered html list below -->
       <div class="content">
         <ul>
           <li>Wide range of social navigation scenarios with both individual and group interactions.</li>
           <li>Over 192 minutes of interaction data and over 172 minutes of annotated trajectories.</li>
-          <li>Over 1000 individualy annotated human tracks and over 600 robot tracks.</li>
-          <li>Sensory data from the perspective 2 different robots (Toyota HSR and Clearpath Jackal).</li>
+          <li>Over 1000 individually annotated human tracks and over 600 robot tracks.</li>
+          <li>Sensory data from the perspective of 2 different robots (Toyota HSR and Clearpath Jackal).</li>
           <li>Stationary Ground-Truth Recording Station (GRS) with video camera and 3D LiDAR scans.</li>
           <li>Occupancy grid of the obstacles in the environment.</li>
           <li>Recording of both social and non-social behavior of the robots.</li>
@@ -260,40 +272,41 @@
         <div class="column is-four-fifths">
           <div class="content has-text-justified">
               <!-- Setup section -->
-              <p style="font-size: 1.5em; text-align: center; ">
-                <strong>Environment</strong>
-              </p>
-            <div style="display: flex; gap: 16px; align-items: center;">
-              <div style="flex: 1;">
+              <p class="is-size-4 has-text-centered"><strong>Environment</strong></p>
+            <div class="columns is-vcentered is-multiline">
+              <div class="column is-12-mobile is-6-tablet">
                 <!-- add image below-->
-                <img src="static/images/map.png" alt="Experimental Setup" style="width: 100%; height: auto; border-radius: 8px;">
+                <img src="static/images/map.png" alt="Experimental Setup" class="responsive-img">
               </div>
-              <p style="flex: 1;">
+              <div class="column is-12-mobile is-6-tablet">
                 The dataset was recorded in a broad garage space measuring 3.9 m × 10.7 m with a
                 lateral opening making it possible to elicit tracks in a straight line or around corners.
                 The environment is equipped with a Ground-Truth Recording Station (GRS) that includes a video
-                recorder and a 3D LiDAR scanner. For each scene goal positions were placed around the map acording to
+                recorder and a 3D LiDAR scanner. For each scene goal positions were placed around the map according to
                 different social navigation scenarios.
 
-              </p>
+              </div>
             </div>
             <!-- end of Setup section -->
 
             <!-- Setup section -->
-              <p style="font-size: 1.5em; text-align: center;">
-                <br><strong>Ground-Truth Recording Station (GRS)</strong>
-              </p>
-            <div style="display: flex; gap: 16px; align-items: stretch;">
-              <div style="flex: 1; display: flex; flex-direction: column;">
+              <p class="is-size-4 has-text-centered"><br><strong>Ground-Truth Recording Station (GRS)</strong></p>
+            <div class="columns is-multiline">
+              <div class="column is-12-mobile is-6-tablet">
                 <!-- add image below-->
-                <img src="static/images/grs.jpg" alt="Experimental Setup" style="width: 100%; height: 100%; border-radius: 8px; object-fit: cover; flex: 1;">
+                <img src="static/images/grs.jpg" alt="Experimental Setup" class="responsive-img">
               </div>
-              <div style="flex: 2; display: flex; flex-direction: column;">
-                <iframe width="100%" height="100%" style="flex: 1; min-height: 300px;" title="angel.stl" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="clipboard-write; autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://thangs.com/model/1362968/embed?utm_source=embed"></iframe>
+              <div class="column is-12-mobile is-6-tablet">
+                <div class="responsive-video" style="min-height:300px;">
+                  <iframe width="100%" height="100%" title="angel.stl" frameborder="0" allowfullscreen
+                    mozallowfullscreen="true" webkitallowfullscreen="true"
+                    allow="clipboard-write; autoplay; fullscreen; xr-spatial-tracking"
+                    src="https://thangs.com/model/1362968/embed?utm_source=embed"></iframe>
+                </div>
               </div>
             </div>
               <br>
-              <p class="has-text-justified" style="text-align: center;">
+              <p class="has-text-justified has-text-centered">
                 The Ground-Truth Recording Station (GRS) is equipped with an 
                 <a href="https://www.intelrealsense.com/depth-camera-d455/" target="_blank" style="color: #1a0dab;">Intel® RealSense™ Depth Camera D455</a> 
                 and a 
@@ -302,42 +315,38 @@
                 You can interact with the frame in the 3D viewport above (click and drag to rotate) or access the 3D model 
                 <a href="https://thangs.com/designer/johnatabrayan/3d-model/grs.stl-1362968" target="_blank" style="color: #1a0dab;">here</a>.
               </p>
-              <p class="has-text-justified" style="text-align: center;">
+              <p class="has-text-justified has-text-centered">
                 To minimize occlusions, the GRS was positioned at a height of 2.17&nbsp;m above the ground. 
                 To enhance the resolution of the LiDAR data, the GRS was tilted 15° downward toward the area of interest.
               </p>
             <!-- end of Setup section -->
 
             <!-- Setup section -->
-              <p style="font-size: 1.5em; text-align: center;">
-                <br><strong>Robots</strong>
-              </p>
-            <div style="display: flex; gap: 16px; align-items: center;">
-              <div style="flex: 1;">
+              <p class="is-size-4 has-text-centered"><br><strong>Robots</strong></p>
+            <div class="columns is-vcentered is-multiline">
+              <div class="column is-12-mobile is-6-tablet">
                 <!-- add image below-->
-                <img src="static/images/robots.jpg" alt="Experimental Setup" style="width: 100%; height: auto; border-radius: 8px;">
+                <img src="static/images/robots.jpg" alt="Experimental Setup" class="responsive-img">
               </div>
-                <p style="flex: 1;">
+                <div class="column is-12-mobile is-6-tablet">
                   The robots used in the NavWareSet dataset are the
                   <a href="https://clearpathrobotics.com/jackal-small-unmanned-ground-vehicle/" target="_blank" style="color: #1a0dab;">Clearpath Jackal</a> and the
                   <a href="https://www.toyota-europe.com/news/2018/toyota-expanding-robotics-research-in-europe" target="_blank" style="color: #1a0dab;">Toyota HSR</a>.
                   The Jackal is a small, rugged robot designed for outdoor and indoor environments, equipped with a 3D LiDAR sensor and an RGB-D camera.
                   The HSR is a versatile human-support robot capable of performing household tasks, featuring a manipulator arm, a mobile base, and various sensors for safe and intelligent interaction with people and objects.
                   In most scenarios both robots were teleoperated by a human operator, first in a socially aware manner, and then in a non-aware manner.
-                </p>
+                </div>
             </div>
             <!-- Setup section -->
-              <p style="font-size: 1.5em; text-align: center;">
-                <br><strong>Experiment description</strong>
-              </p>
-            <div style="display: flex; gap: 16px; align-items: stretch;">
-              <div style="flex: 1; display: flex; flex-direction: column;">
+              <p class="is-size-4 has-text-centered"><br><strong>Experiment description</strong></p>
+            <div class="columns is-multiline">
+              <div class="column is-12">
                 <!-- add image below-->
-                <img src="static/images/Experiment_description.png" alt="Experimental Setup" style="width: 100%; height: 100%; border-radius: 8px; object-fit: cover; flex: 1;">
+                <img src="static/images/Experiment_description.png" alt="Experimental Setup" class="responsive-img">
               </div>
             </div>
               <br>
-              <p class="has-text-justified" style="text-align: center;">
+              <p class="has-text-justified has-text-centered">
                 The experiment was designed to capture common social navigation scenarios. These scenarios were proposed by Francis et al. in their paper, <a href="https://arxiv.org/pdf/2306.16740" target="_blank" style="color: #1a0dab;">Principles and Guidelines for Evaluating Social Robot Navigation Algorithms</a>. They serve not only to facilitate data collection but also to provide a standardized basis for evaluating the performance of social navigation algorithms. A detailed description of the scenarios used in NavWareSet is provided in the table below.
               </p>
               <details class="expandable">
@@ -425,8 +434,8 @@
                 </div>
               </details>
               <br>
-              <p class="has-text-justified" style="text-align: center;">
-                In total 17 participants were asigned numbers and divided in 2 groups of 5 and 5 pairs.
+              <p class="has-text-justified has-text-centered">
+                In total 17 participants were assigned numbers and divided in 2 groups of 5 and 5 pairs.
                 Each group performed all scenarios but the object handover scenario. All scenarios were recorded for 4 minutes.
                 Most scenarios were performed with both robots, except for the object handover scenario which was only performed with the Toyota HSR.
                 Most scenarios were recorded twice, once with the robot navigating in a socially compliant manner and once in a non-compliant manner.
@@ -516,13 +525,12 @@
    <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Data Pipeline</h2>
-      <!-- unordered html list below -->
-      <div style="display: flex; gap: 16px; align-items: center;">
-        <div style="flex: 1;">
+      <div class="columns is-vcentered is-multiline">
+        <div class="column is-12-mobile is-6-tablet">
           <!-- add image below-->
-          <img src="static/images/pipeline.png" alt="Experimental Setup" style="width: 100%; height: auto; border-radius: 8px;">
+          <img src="static/images/pipeline.png" alt="Experimental Setup" class="responsive-img">
         </div>
-          <div style="flex: 1;">
+          <div class="column is-12-mobile is-6-tablet">
             <ol style="text-align: justify;">
               <li>
                 <strong>Experiment Design:</strong> 
@@ -600,7 +608,7 @@
       <h2 class="title is-3">Data Overview</h2>
         <p> 
           Each scene is divided into four files, each containing its own data. 
-          All files start with the number of it's respective scene name.
+          All files start with the number of its respective scene name.
         </p>
         <p>
           For generic scene "x" we have the following files:
@@ -787,14 +795,13 @@
 <!--End BibTex citation -->
 
 <!-- Authors -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Authors</h2>
-      <div class="column has-text-centered">
-      <div class="is-size-5 publication-authors">
-        <!-- Paper authors -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Authors</h2>
+        <div class="column has-text-centered">
+          <div class="is-size-5 publication-authors">
+            <!-- Paper authors -->
                
               <span class="author-block">
                 
@@ -837,13 +844,13 @@
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Funding</h2>
-     <div style="display: flex; gap: 16px; align-items: center;">
-              <div style="flex: 1; display: flex; justify-content: center;">
-                <img src="static/images/Logo-ANR-300x300.png" alt="Experimental Setup" style="width: 50%; height: 50%; border-radius: 8px;">
+     <div class="columns is-vcentered is-multiline">
+              <div class="column is-12-mobile is-4-tablet has-text-centered">
+                <img src="static/images/Logo-ANR-300x300.png" alt="Experimental Setup" style="width: 60%; height: auto; border-radius: 8px;">
               </div>
-              <p style="flex: 1;">
+              <div class="column is-12-mobile is-8-tablet">
                 This project has received funding from the French National Research Agency (ANR) under grant agreement No ANR-23-CE10-0016.
-              </p>
+              </div>
             </div>
     </div>
   </div>
@@ -851,11 +858,11 @@
 <!-- End of funding section-->
 
 <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-8">
-            <div class="content">
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
 
               <p>
                 This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
