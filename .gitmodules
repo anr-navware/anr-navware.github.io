@@ -1,0 +1,3 @@
+[submodule "navwareset"]
+	path = navwareset
+	url = https://github.com/anr-navware/NavWareSet
