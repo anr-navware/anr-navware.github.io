@@ -30,6 +30,15 @@ Welcome to NavWare, a *Jeunes Chercheuses et Jeunes Chercheurs (JCJC)* research 
 
 ## Publications
 
+1. Johnata Brayan, Sihao Deng, Armando Alves Neto, Iaroslav Okunevich, Tomas Krajnik, Francois Bremond, and Zhi Yan. [NavWareSet: A Dataset of Socially Compliant and Non-Compliant Robot Navigation](https://hal.science/view/index/docid/5231729). *HAL*, 2025.
+
+## Theses
+
+1. Johnata Brayan. [NavWareSet: A dataset of socially compliant and non-compliant robot navigation](http://hdl.handle.net/1843/84539). Master's thesis, Universidade Federal de Minas Gerais (UFMG), August 2025.
+
+## Datasets
+
+1. [NavWareSet: A Dataset of Socially Compliant and Non-Compliant Robot Navigation](https://anr-navware.github.io/navwareset/)
 
 ## Deliverables
 
