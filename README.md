@@ -6,6 +6,10 @@
 
 ## News
 
+\[2025-12-08\]: We have been awarded a significant allocation of compute hours on the IDRIS Jean Zay supercomputer for our project!
+
+\[2025-11-24\]: Ms. Yifei Cao joined us as a doctoral student!
+
 \[2025-05-06\]: We participated in the ["Fabriquer Demain"](images/anr_colloque_25.jpg) conference organized by ANR!
 
 \[2025-04-02\]: We had in-depth exchanges with the [industry](images/sitl2025.jpg) at [SITL](https://www.sitl.eu/)!
@@ -24,9 +28,9 @@ Welcome to NavWare, a *Jeunes Chercheuses et Jeunes Chercheurs (JCJC)* research 
 
 ## Team
 
-| <img src="https://yzrobot.github.io/figures/z_lcas.jpg" width="168"> | <img src="images/INRIA-0126-216.jpg" width="168"> | <img src="images/Johnny.jpg" width="168"> | <img src="images/Boyuan.jpg" width="168"> |
-| :-: | :-: | :-: | :-: |
-| [Zhi Yan](https://yzrobot.github.io/) (PI)<br>Assistant Professor | [François Brémond](http://www-sop.inria.fr/members/Francois.Bremond/) <br>Research Director | [Johnata Brayan](https://scholar.google.com/citations?user=OxFeRc4AAAAJ) <br>Master's student | [Boyuan Zhang](https://fr.linkedin.com/in/boyuan-zhang-493776216) <br>Master's student |
+| <img src="https://yzrobot.github.io/figures/z_lcas.jpg" width="168"> | <img src="images/INRIA-0126-216.jpg" width="168"> | <img src="images/Johnny.jpg" width="168"> | <img src="images/Boyuan.jpg" width="168"> | <img src="images/Yifei.jpg" width="168"> |
+| :-: | :-: | :-: | :-: | :-: |
+| [Zhi Yan](https://yzrobot.github.io/) (PI)<br>Assistant Professor | [François Brémond](http://www-sop.inria.fr/members/Francois.Bremond/) <br>Research Director | [Johnata Brayan](https://scholar.google.com/citations?user=OxFeRc4AAAAJ) <br>Master's student | [Boyuan Zhang](https://fr.linkedin.com/in/boyuan-zhang-493776216) <br>Master's student | [Yifei Cao]() <br>Ph.D. student
 
 ## Publications
 
@@ -60,4 +64,5 @@ This project has received funding from the French National Research Agency (ANR)
 <a href="https://anr.fr/"><img src="images/ANR-logo-2021-sigle.jpg" height="38"></a>&nbsp;
 <a href="https://www.utbm.fr/"><img src="images/utbm_logo.png" height="38"></a>&nbsp;
 <a href="http://www.ciad-lab.fr/"><img src="images/ciad_logo.png" height="38"></a>&nbsp;
-<a href="https://www.ensta.fr/"><img src="images/ensta_logo.jpg" height="38"></a>
+<a href="https://www.ensta.fr/"><img src="images/ensta_logo.jpg" height="38"></a>&nbsp;
+<a href="https://www.genci.fr/"><img src="images/genci_logo.png" height="38"></a>
