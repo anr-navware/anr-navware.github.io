@@ -1,3 +1,4 @@
+<!-- git submodule update --init --remote -->
 <img src="images/navware_logo.png" height="38">
 
 # Safe Worker-collaborative Navigation for Robotic Intralogistics in Infrastructure-free Warehouses
