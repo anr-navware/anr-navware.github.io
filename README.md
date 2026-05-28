@@ -1,4 +1,3 @@
-<!-- git submodule update --init --remote -->
 <img src="images/navware_logo.png" height="38">
 
 # Safe Worker-collaborative Navigation for Robotic Intralogistics in Infrastructure-free Warehouses
@@ -6,6 +5,10 @@
 <img src="images/navware-concpet.jpg" width="360">
 
 ## News
+
+\[2026-06-05\]: We presented our work on human-aware navigation at the [8th Long-term Human Motion Prediction Workshop @ ICRA 2026](https://motionpredictionicra2026.github.io/).
+
+\[2026-06-03\]: We presented our [NavWareSet](https://anr-navware.github.io/navwareset/) at the [Global HSR Forum @ ICRA 2026](https://humansupportrobot.org/2026/04/09/global-hsr-forum-shaping-the-future-of-service-robotics-with-hsr-icra-2026/).
 
 \[2025-12-08\]: We have been awarded a significant allocation of compute hours on the IDRIS Jean Zay supercomputer for our project!
 
@@ -31,11 +34,11 @@ Welcome to NavWare, a *Jeunes Chercheuses et Jeunes Chercheurs (JCJC)* research 
 
 | <img src="https://yzrobot.github.io/figures/z_lcas.jpg" width="168"> | <img src="images/INRIA-0126-216.jpg" width="168"> | <img src="images/Johnny.jpg" width="168"> | <img src="images/Boyuan.jpg" width="168"> | <img src="images/Yifei.jpg" width="168"> |
 | :-: | :-: | :-: | :-: | :-: |
-| [Zhi Yan](https://yzrobot.github.io/) (PI)<br>Assistant Professor | [François Brémond](http://www-sop.inria.fr/members/Francois.Bremond/) <br>Research Director | [Johnata Brayan](https://scholar.google.com/citations?user=OxFeRc4AAAAJ) <br>Master's student | [Boyuan Zhang](https://fr.linkedin.com/in/boyuan-zhang-493776216) <br>Master's student | [Yifei Cao]() <br>Ph.D. student
+| [Zhi Yan](https://yzrobot.github.io/) (PI)<br>Assistant Professor | [François Brémond](http://www-sop.inria.fr/members/Francois.Bremond/) <br>Research Director | [Johnata Brayan](https://scholar.google.com/citations?user=OxFeRc4AAAAJ) <br>Master's student | [Boyuan Zhang](https://fr.linkedin.com/in/boyuan-zhang-493776216) <br>Master's student | [Yifei Cao](https://scholar.google.com/citations?user=1ntZ3usAAAAJ) <br>Ph.D. student
 
 ## Publications
 
-1. Johnata Brayan, Sihao Deng, Armando Alves Neto, Iaroslav Okunevich, Tomas Krajnik, Francois Bremond, and Zhi Yan. [NavWareSet: A Dataset of Socially Compliant and Non-Compliant Robot Navigation](https://hal.science/view/index/docid/5231729). *HAL*, 2025.
+1. Johnata Brayan, Sihao Deng, Armando Alves Neto, Iaroslav Okunevich, Tomas Krajnik, Francois Bremond, and Zhi Yan. [NavWareSet: A Dataset of Socially Compliant and Non-Compliant Robot Navigation](https://doi.org/10.1177/02783649261447305). *The International Journal of Robotics Research (IJRR)*, 2026.
 
 ## Theses
 
@@ -45,6 +48,10 @@ Welcome to NavWare, a *Jeunes Chercheuses et Jeunes Chercheurs (JCJC)* research 
 
 1. [NavWareSet: A Dataset of Socially Compliant and Non-Compliant Robot Navigation](https://anr-navware.github.io/navwareset/)
 
+## Courses
+
+1. [Mobile Robotics](https://yzrobot.github.io/IA712/)
+
 ## Deliverables
 
 | Number | Title | Type | Dissemination | Due month | Submitted |
@@ -52,6 +59,7 @@ Welcome to NavWare, a *Jeunes Chercheuses et Jeunes Chercheurs (JCJC)* research 
 | D7.1 | NavWare project website online and social media appearance initialised | DEC | Public | M01 | ✅ |
 | D7.2 | Initial data management plan | Report | Confidential | M06 | ✅ |
 | D7.3 | [NavWare flyer](images/NavWare-flyer.jpg) | DEC | Public | M19 | ✅ |
+| D7.4 | [GitHub repositories initialised](https://github.com/anr-navware) | DEC | Other | M24 | ✅ |
 
 ## Follow us
 
